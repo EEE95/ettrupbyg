@@ -1,0 +1,34 @@
+/* Variabler*/
+$bg-color: #F8F6F3;
+$box-color: #E3DCD1;
+$primary-color: #94A6AE;
+$secondary-color: #335766;
+$accent-color: #E97E3A;
+$text-color: #0f1010;
+$header-font: "Gudea", sans-serif;
+$font: "roboto", sans-serif;
+
+/*Mixins*/
+
+@mixin btn{
+    background-color: $accent-color;
+    border-radius: 5px;
+    box-shadow: 2px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    text-decoration: none;
+    text-align: center;
+    padding: 13.5px 111px;
+    color: $text-color;
+    font-family: $font;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+@mixin btn-hover{
+        background-color: transparent;
+        border-radius: 5px;
+        border: 3px solid $secondary-color;
+        color: $accent-color;
+        cursor: pointer;
+}

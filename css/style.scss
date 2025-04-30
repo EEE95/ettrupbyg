@@ -1,0 +1,45 @@
+@use "partial";
+
+/*Generel styling*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3{
+    font-family: partial.$header-font;
+    color: partial.$text-color;
+}
+
+h1{
+    font-size: 40px;
+}
+
+h2{
+    font-size: 36px;
+}
+
+h3{
+    font-size: 32px;
+}
+
+p, a{
+    font-family: partial.$font;
+    font-size: 20px;
+    color: partial.$text-color;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*-------- HEADER ---------*/
+
+/*-------- HEADER - SLUT ---------*/
+
+/*-------- FOOTER ---------*/
+
+/*-------- FOOTER - SLUT ---------*/
+
+/*-------- MEDIA QUERIES ---------*/
