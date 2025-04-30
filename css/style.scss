@@ -1,45 +1,183 @@
+// Importér evt. partials hvis du bruger flere filer
 @use "partial";
 
-/*Generel styling*/
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+/* ------------ GENEREL STYLING ------------ */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-h1, h2, h3{
-    font-family: partial.$header-font;
-    color: partial.$text-color;
+body {
+  background-color: partial.$bg-color;
+  font-family: partial.$font;
 }
 
-h1{
-    font-size: 40px;
+h1, h2, h3 {
+  font-family: partial.$header-font;
+  color: partial.$text-color;
 }
 
-h2{
-    font-size: 36px;
-}
+h1 { font-size: 40px; }
+h2 { font-size: 36px; }
+h3 { font-size: 32px; }
 
-h3{
-    font-size: 32px;
-}
-
-p, a{
-    font-family: partial.$font;
-    font-size: 20px;
-    color: partial.$text-color;
+p, a {
+  font-size: 20px;
+  color: partial.$text-color;
+  text-decoration: none;
 }
 
 a{
-    text-decoration: none;
+    font-weight: 600;
+
+    &:hover{
+        font-weight: 400;
+    }
 }
 
-/*-------- HEADER ---------*/
 
-/*-------- HEADER - SLUT ---------*/
 
-/*-------- FOOTER ---------*/
+/* ------------ HEADER ------------ */
+header {
+  background-color: partial.$primary-color;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  height: 100px;
+  padding: 1rem 2rem;
 
-/*-------- FOOTER - SLUT ---------*/
+  .logo {
+    height: 50px;
+  }
 
-/*-------- MEDIA QUERIES ---------*/
+  .menu-toggle {
+    display: none;
+    background: none;
+    font-size: 1.8rem;
+    border: none;
+    cursor: pointer;
+    z-index: 1100;
+  }
+
+  .navbar {
+    display: flex;
+
+    ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+    }
+
+    li {
+      position: relative;
+    }
+
+    a.active {
+      background-color: partial.$secondary-color;
+      padding: 0.5rem;
+      border-radius: 5px;
+      color: partial.$bg-color;
+      font-weight: 400;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #fff;
+      min-width: 180px;
+      top: 100%;
+      left: 0;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      z-index: 1000;
+
+      li a {
+        padding: 0.5rem 1rem;
+        display: block;
+        white-space: nowrap;
+        color: #000;
+      }
+    }
+  }
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/* ------------ HEADER SLUT ------------ */
+
+
+/* ------------ FOOTER ------------ */
+footer {
+  background-color: partial.$primary-color;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  .footer-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+    li {
+      list-style: none;
+    }
+  }
+
+  .footer-logo img {
+    margin-top: 1rem;
+  }
+}
+/* ------------ FOOTER SLUT ------------ */
+
+/* ------------ RESPONSIVE / MOBIL ------------ */
+@media (max-width: 768px) {
+  header {
+    flex-wrap: wrap;
+
+    .menu-toggle {
+      display: block;
+    }
+
+    .navbar {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      position: absolute;
+      top: 100px;
+      left: 0;
+      background-color: partial.$primary-color;
+      z-index: 999;
+
+      ul {
+        flex-direction: column;
+        width: 100%;
+
+        li {
+          width: 100%;
+        }
+
+        a {
+          padding: 1rem;
+          display: block;
+        }
+      }
+    }
+
+    .navbar.active {
+      display: flex;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: none; 
+    }
+
+    .dropdown.open .dropdown-content {
+      display: block;
+      position: static;
+      box-shadow: none;
+    }
+  }
+}
