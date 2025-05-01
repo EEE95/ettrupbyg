@@ -18,12 +18,12 @@ h1, h2, h3 {
   color: partial.$text-color;
 }
 
-h1 { font-size: 40px; }
-h2 { font-size: 32px; }
-h3 { font-size: 26px; }
+h1 { font-size: 2.5rem; }
+h2 { font-size: 1.6rem; }
+h3 { font-size: 1.4rem; }
 
 p, a {
-  font-size: 18px;
+  font-size: 1.2rem;
   color: partial.$text-color;
   text-decoration: none;
 }
@@ -178,7 +178,7 @@ header {
         position: absolute;
         inset: 0;
         z-index: 1;
-        background: rgba(255, 255, 255, 0.555); // eller 0.5 for mere kontrast
+        background: rgba(255, 255, 255, 0.555);
         display: flex;
         flex-direction: column;
         justify-content: center;
