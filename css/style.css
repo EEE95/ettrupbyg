@@ -49,22 +49,40 @@ a:hover {
   background-color: #E97E3A;
   border-radius: 5px;
   box-shadow: 2px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  text-decoration: none;
-  text-align: center;
-  padding: 13.5px 111px;
+  width: 200px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: #0f1010;
   font-family: "roboto", sans-serif;
-  font-size: 20px;
   font-weight: 700;
   letter-spacing: 1px;
   text-transform: uppercase;
+  padding: 0;
+  white-space: nowrap;
 }
 .btn:hover {
-  background-color: transparent;
+  background-color: #335766;
   border-radius: 5px;
-  border: 3px solid #335766;
-  color: #E97E3A;
+  border: 2px solid #335766;
+  color: #F8F6F3;
   cursor: pointer;
+}
+
+.margin-top {
+  margin-top: 1rem;
+}
+
+.margin-bottom {
+  margin-bottom: 1rem;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
 }
 
 /* --- HEADER - contact-info --- */

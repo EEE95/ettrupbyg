@@ -45,7 +45,19 @@ a{
         &:hover{
             @include partial.btn-hover;
         }
- }
+}
+
+.margin-top{
+  margin-top: 1rem;
+}
+
+.margin-bottom{
+  margin-bottom: 1rem;
+}
+
+.center{
+  @include partial.center;
+}
 
 /* --- HEADER - contact-info --- */
 header.contact-info{
