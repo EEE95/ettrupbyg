@@ -42,6 +42,17 @@ a:hover {
   font-weight: 400;
 }
 
+/* --- HEADER - contact-info --- */
+header.contact-info {
+  background-color: #F8F6F3;
+  height: 16px;
+  justify-content: end;
+  gap: 2rem;
+}
+header.contact-info a {
+  font-size: 14px;
+}
+
 /* ------------ HEADER ------------ */
 header {
   background-color: #94A6AE;

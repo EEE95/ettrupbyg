@@ -37,6 +37,17 @@ a{
 }
 
 
+/* --- HEADER - contact-info --- */
+header.contact-info{
+    background-color: partial.$bg-color;
+    height: 16px;
+    justify-content: end;
+    gap: 2rem;
+
+    a{
+        font-size: 14px;
+    }
+}
 
 /* ------------ HEADER ------------ */
 header {
