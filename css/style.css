@@ -260,6 +260,33 @@ header .navbar .dropdown-content li a {
 }
 
 /* ---- SERVICES SLUT ---- */
+/* ---- TEKST + BILLEDE BLOCK ---- */
+.tw-block-container {
+  padding: 4rem 1rem;
+  background-color: #E3DCD1;
+}
+.tw-block-container .text-img-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+}
+.tw-block-container .text-img-wrapper .text-block,
+.tw-block-container .text-img-wrapper .img-block {
+  flex: 1 1 50%;
+}
+.tw-block-container .text-img-wrapper .img-block img {
+  width: 100%;
+  min-height: 350px;
+  box-shadow: 20px 20px 0px 0px #335766;
+}
+
+/* ---- TEKST + BILLEDE BLOCK SLUT ---- */
+.contact-container {
+  background-color: transparent;
+}
+
 /* ------------ FORSIDE SLUT ------------ */
 /* ------------ FOOTER ------------ */
 footer {
