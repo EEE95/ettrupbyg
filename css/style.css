@@ -282,13 +282,11 @@ header .navbar .dropdown-content li a {
   box-shadow: 20px 20px 0px 0px #335766;
 }
 
-/* ---- TEXT + IMAGE END---- */
-/* ---- IMAGE + CONTACT FORM ---- */
 .contact-container {
   background-color: transparent;
 }
 
-/* ---- IMAGE + CONTACT FORM END ---- */
+/* ---- TEXT + IMAGE END---- */
 /* ---- TESTIMONIALS ---- */
 /* ---- TESTIMONIALS END ---- */
 /* ---- GALLERY ---- */
@@ -330,6 +328,43 @@ header .navbar .dropdown-content li a {
 }
 /* ---- GALLERY END ---- */
 /* ------------ FRONTPAGE END ------------ */
+/* ------------ CONTACTFORM ------------ */
+.contactform-container {
+  padding: 4rem 1rem;
+  max-width: 750px;
+  margin: 0 auto;
+}
+.contactform-container input,
+.contactform-container textarea,
+.contactform-container label {
+  font-family: "roboto", sans-serif;
+  display: block;
+  width: 100%;
+}
+.contactform-container input,
+.contactform-container textarea {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 1px solid #0f1010;
+  font-size: 18px;
+  padding: 10px;
+}
+.contactform-container input:focus,
+.contactform-container textarea:focus {
+  outline: 1px solid #0f1010;
+}
+.contactform-container form {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+  padding: 20px 0;
+}
+.contactform-container input[type=submit] {
+  margin-top: 1rem;
+  width: 100px;
+}
+
+/* ------------ CONTACTFORM END ------------ */
 /* ------------ FOOTER ------------ */
 footer {
   background-color: #94A6AE;

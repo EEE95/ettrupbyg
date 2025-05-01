@@ -288,15 +288,11 @@ header {
     }
   }
 }
-/* ---- TEXT + IMAGE END---- */
 
-/* ---- IMAGE + CONTACT FORM ---- */
 .contact-container{
   background-color: transparent;
 }
-
-
-/* ---- IMAGE + CONTACT FORM END ---- */
+/* ---- TEXT + IMAGE END---- */
 
 /* ---- TESTIMONIALS ---- */
 
@@ -342,6 +338,50 @@ header {
 }
 /* ---- GALLERY END ---- */
 /* ------------ FRONTPAGE END ------------ */
+
+/* ------------ CONTACTFORM ------------ */
+.contactform-container{
+  padding: 4rem 1rem;
+  max-width: 750px;
+  margin: 0 auto;
+
+  input,
+  textarea,
+  label{
+    font-family: partial.$font;
+    display: block;
+    width: 100%;
+  }
+
+  input,
+  textarea{
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid partial.$text-color;
+    font-size: 18px;
+    padding: 10px;
+  }
+
+  input:focus,
+  textarea:focus{
+    outline: 1px solid partial.$text-color;
+  }
+
+  form{
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+    padding: 20px 0;
+  }
+
+  input[type=submit]{
+    margin-top: 1rem;
+    width: 100px;
+  }
+
+}
+
+/* ------------ CONTACTFORM END ------------ */
 
 /* ------------ FOOTER ------------ */
 footer {

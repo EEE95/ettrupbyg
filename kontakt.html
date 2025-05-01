@@ -7,17 +7,32 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/a6a4f7c3d1.js" crossorigin="anonymous"></script>
     <script src="script.js" defer></script>
-    <title>Ettrup Byg | Din lokale murer </title>
+    <title>Ettrup Byg | Kontakt din lokale murer </title>
     <link rel="shortcut icon" href="image/50x50-uden-navn.png" type="image/x-icon">
 </head>
+
 <body>
-    <Header class="header">
+    <!-- header with contact info -->
+    <header class="contact-info">
+        <div>
+            <i class="fa-solid fa-phone" style="color: #0c0d0d;"></i>
+            <a href="tel:+4520819520"> +45 20 81 95 20</a>
+        </div>
+        
+        <div>
+            <i class="fa-solid fa-envelope-open-text" style="color: #0c0d0d;"></i>
+            <a href="mailto:info@ettrupbyg.dk"> info@ettrupbyg.dk</a>
+        </div>
+    
+    <!-- header with logo and navigation -->
+    </header>
+    <header class="header">
         <img class="logo" src="image/50x50-uden-navn.png" alt="Ettrup Byg Logo">
 
         <button class="menu-toggle" id="menu-toggle"><i class="fa-solid fa-bars"></i></button>
         <nav class="navbar" id="navbar">
             <ul>
-              <li><a href="index.html" class="active">Forside</a></li>
+              <li><a href="index.html">Forside</a></li>
               <li class="dropdown">
                 <a href="#">Services <i class="fa-solid fa-chevron-down"></i></a>
                 <ul class="dropdown-content">
@@ -31,14 +46,33 @@
               <li><a href="kontakt.html">Kontakt</a></li>
             </ul>
           </nav>
-    </Header>
+    </header>
 
     <Main>
+        <!-- hero section -->
+        <section class="hero">
+            <img src="image/hero-forside.png" alt="">
+        </section>
 
-        <h1>
-            Kontakt
-        </h1>
+        <!-- Contactform -->
+         <div class="contactform-container">
+            <h2>Kontakt</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, dolores!</p>
 
+            <form action="mail.php" method="post">
+                <label for="name">Navn:</label>
+                <input type="text" name="name" id="name">
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" id="email">
+                <label for="text">Emne:</label>
+                <input type="text" name="subject" id="subject">
+                <label for="message">Besked</label>
+                <textarea name="message"></textarea>
+                <input type="submit" value="Send" class="btn">
+            </form>
+         </div>
+
+            
     </Main>
 
     <footer>
@@ -50,7 +84,7 @@
                     <p>E-mail:<a href="mailto:info@ettrupbyg.dk"> info@ettrupbyg.dk</a></p>
             </div>
             <div>
-                <h3>Firma</h3>
+                <h3>Ettrup Byg</h3>
                     <p>Niels Petersensvej 35A</p>
                     <p>7080 Børkop</p>
                     <p>CVR nr. 37693766</p>
