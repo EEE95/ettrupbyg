@@ -19,8 +19,8 @@ h1, h2, h3 {
 }
 
 h1 { font-size: 40px; }
-h2 { font-size: 36px; }
-h3 { font-size: 28px; }
+h2 { font-size: 32px; }
+h3 { font-size: 26px; }
 
 p, a {
   font-size: 18px;
@@ -117,6 +117,111 @@ header {
 }
 /* ------------ HEADER SLUT ------------ */
 
+/* ------------ FORSIDE ------------ */
+/* ---- HERO-FORSIDE ---- */
+
+/* ---- HERO-FORSIDE SLUT ---- */
+
+/* ---- HIGHLIGHT ---- */
+.highlight-container{
+    height: 60px;
+    background-color: partial.$secondary-color;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    .highlight{
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+        
+        p{
+            color: partial.$bg-color;
+        }
+    }
+}
+/* ---- HIGHLIGHT SLUT ---- */
+
+/* ---- INTRO ---- */
+
+/* ---- INTRO SLUT ---- */
+
+/* ---- SERVICES ---- */
+.services-preview {
+    padding: 3rem 1rem;
+    background-color: partial.$secondary-color;
+  
+    .service-grid {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    }
+  
+    .service-box {
+      position: relative;
+      display: block;
+      height: 250px;
+      overflow: hidden;
+      border-radius: 5px;
+      text-decoration: none;
+  
+      .image {
+        position: absolute;
+        inset: 0;
+        background-size: cover;
+        background-position: center;
+        transition: transform 0.4s ease;
+        z-index: 0;
+      }
+  
+      .overlay {
+        position: absolute;
+        inset: 0;
+        z-index: 1;
+        background: rgba(255, 255, 255, 0.555); // eller 0.5 for mere kontrast
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 1rem;
+  
+        h3 {
+          margin-bottom: 0.5rem;
+          transition: transform 0.3s ease;
+        }
+  
+        .read-more {
+          opacity: 0;
+          transform: translateY(10px);
+          transition: opacity 0.3s ease, transform 0.3s ease;
+        }
+      }
+  
+      &:hover {
+        .image {
+          transform: scale(1.1);
+        }
+  
+        .overlay {
+          h3 {
+            transform: translateY(-5px);
+          }
+  
+          .read-more {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+      }
+    }
+  }
+  
+  
+
+/* ---- SERVICES SLUT ---- */
+
+/* ------------ FORSIDE SLUT ------------ */
 
 /* ------------ FOOTER ------------ */
 footer {
