@@ -26,11 +26,11 @@ h2 {
 }
 
 h3 {
-  font-size: 32px;
+  font-size: 28px;
 }
 
 p, a {
-  font-size: 20px;
+  font-size: 18px;
   color: #0f1010;
   text-decoration: none;
 }
@@ -49,7 +49,7 @@ header {
   justify-content: space-between;
   align-items: center;
   position: relative;
-  height: 100px;
+  height: 60px;
   padding: 1rem 2rem;
 }
 header .logo {
@@ -76,15 +76,14 @@ header .navbar li {
 }
 header .navbar a.active {
   background-color: #335766;
-  padding: 0.5rem;
-  border-radius: 5px;
+  padding: 20px 0.5rem;
   color: #F8F6F3;
   font-weight: 400;
 }
 header .navbar .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #fff;
+  background-color: #F8F6F3;
   min-width: 180px;
   top: 100%;
   left: 0;
@@ -128,30 +127,38 @@ footer .footer-logo img {
 @media (max-width: 768px) {
   header {
     flex-wrap: wrap;
+    padding: 0 1rem;
   }
   header .menu-toggle {
     display: block;
   }
+  header .logo {
+    height: 40px;
+  }
   header .navbar {
     display: none;
     flex-direction: column;
-    width: 100%;
+    width: 250px;
     position: absolute;
-    top: 100px;
-    left: 0;
+    top: 60px;
+    right: 0;
     background-color: #94A6AE;
     z-index: 999;
   }
   header .navbar ul {
     flex-direction: column;
     width: 100%;
+    gap: 0;
   }
   header .navbar ul li {
     width: 100%;
   }
   header .navbar ul a {
-    padding: 1rem;
+    padding: 0.5rem;
     display: block;
+  }
+  header .navbar a.active {
+    padding: 0.5rem;
   }
   header .navbar.active {
     display: flex;
