@@ -29,17 +29,42 @@ h3 {
   font-size: 1.4rem;
 }
 
-p, a {
+p {
   font-size: 1.2rem;
   color: #0f1010;
-  text-decoration: none;
+  line-height: 1.6;
 }
 
 a {
+  font-size: 1.2rem;
+  color: #0f1010;
+  text-decoration: none;
   font-weight: 600;
 }
 a:hover {
   font-weight: 400;
+}
+
+.btn {
+  background-color: #E97E3A;
+  border-radius: 5px;
+  box-shadow: 2px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  text-decoration: none;
+  text-align: center;
+  padding: 13.5px 111px;
+  color: #0f1010;
+  font-family: "roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.btn:hover {
+  background-color: transparent;
+  border-radius: 5px;
+  border: 3px solid #335766;
+  color: #E97E3A;
+  cursor: pointer;
 }
 
 /* --- HEADER - contact-info --- */
@@ -115,6 +140,14 @@ header .navbar .dropdown-content li a {
 /* ------------ HEADER SLUT ------------ */
 /* ------------ FORSIDE ------------ */
 /* ---- HERO-FORSIDE ---- */
+.hero-forside {
+  height: 100%;
+}
+.hero-forside img {
+  height: 100%;
+  width: 100%;
+}
+
 /* ---- HERO-FORSIDE SLUT ---- */
 /* ---- HIGHLIGHT ---- */
 .highlight-container {
@@ -135,6 +168,20 @@ header .navbar .dropdown-content li a {
 
 /* ---- HIGHLIGHT SLUT ---- */
 /* ---- INTRO ---- */
+.intro-container {
+  padding: 4rem 1rem;
+  display: flex;
+  justify-content: center;
+}
+.intro-container .intro {
+  max-width: 1200px;
+  width: 100%;
+  text-align: center;
+}
+.intro-container .intro h1 {
+  margin-bottom: 1rem;
+}
+
 /* ---- INTRO SLUT ---- */
 /* ---- SERVICES ---- */
 .services-preview {
@@ -264,5 +311,9 @@ footer .footer-logo img {
     display: block;
     position: static;
     box-shadow: none;
+  }
+  header.contact-info {
+    height: 20px;
+    gap: 1rem;
   }
 }/*# sourceMappingURL=style.css.map */

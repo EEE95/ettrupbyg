@@ -22,13 +22,16 @@ h1 { font-size: 2.5rem; }
 h2 { font-size: 1.6rem; }
 h3 { font-size: 1.4rem; }
 
-p, a {
-  font-size: 1.2rem;
-  color: partial.$text-color;
-  text-decoration: none;
+p{
+    font-size: 1.2rem;
+    color: partial.$text-color;
+    line-height: 1.6;
 }
 
 a{
+    font-size: 1.2rem;
+    color: partial.$text-color;
+    text-decoration: none;
     font-weight: 600;
 
     &:hover{
@@ -36,6 +39,13 @@ a{
     }
 }
 
+.btn{
+    @include partial.btn;
+
+        &:hover{
+            @include partial.btn-hover;
+        }
+ }
 
 /* --- HEADER - contact-info --- */
 header.contact-info{
@@ -120,6 +130,14 @@ header {
 /* ------------ FORSIDE ------------ */
 /* ---- HERO-FORSIDE ---- */
 
+.hero-forside{
+    height: 100%;
+    img{
+        height: 100%;
+        width: 100%;
+    }
+}
+
 /* ---- HERO-FORSIDE SLUT ---- */
 
 /* ---- HIGHLIGHT ---- */
@@ -143,7 +161,21 @@ header {
 /* ---- HIGHLIGHT SLUT ---- */
 
 /* ---- INTRO ---- */
+.intro-container{
+    padding: 4rem 1rem;
+    display: flex;
+    justify-content: center;
 
+    .intro{
+        max-width: 1200px;
+        width: 100%;
+        text-align: center;
+
+        h1{
+            margin-bottom: 1rem;
+        }
+    }
+}
 /* ---- INTRO SLUT ---- */
 
 /* ---- SERVICES ---- */
@@ -216,10 +248,8 @@ header {
       }
     }
   }
-  
-  
-
 /* ---- SERVICES SLUT ---- */
+
 
 /* ------------ FORSIDE SLUT ------------ */
 
@@ -305,4 +335,12 @@ footer {
       box-shadow: none;
     }
   }
+
+  header.contact-info{
+    height: 20px;
+    gap: 1rem;
+  }
+
+
+
 }
