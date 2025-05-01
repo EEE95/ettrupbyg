@@ -1,6 +1,6 @@
 /* Variabler*/
 /*Mixins*/
-/* ------------ GENEREL STYLING ------------ */
+/* ------------ GENERAL STYLING ------------ */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -85,7 +85,7 @@ a:hover {
   gap: 2rem;
 }
 
-/* --- HEADER - contact-info --- */
+/* --- HEADER - CONTACT-INFO --- */
 header.contact-info {
   background-color: #F8F6F3;
   height: 16px;
@@ -155,9 +155,9 @@ header .navbar .dropdown-content li a {
   display: block;
 }
 
-/* ------------ HEADER SLUT ------------ */
-/* ------------ FORSIDE ------------ */
-/* ---- HERO-FORSIDE ---- */
+/* ------------ HEADER END ------------ */
+/* ------------ FRONTPAGE ------------ */
+/* ---- HERO-FRONTPAGE ---- */
 .hero-forside {
   height: 100%;
 }
@@ -166,7 +166,7 @@ header .navbar .dropdown-content li a {
   width: 100%;
 }
 
-/* ---- HERO-FORSIDE SLUT ---- */
+/* ---- HERO-FRONTPAGE END ---- */
 /* ---- HIGHLIGHT ---- */
 .highlight-container {
   height: 60px;
@@ -184,7 +184,7 @@ header .navbar .dropdown-content li a {
   color: #F8F6F3;
 }
 
-/* ---- HIGHLIGHT SLUT ---- */
+/* ---- HIGHLIGHT END ---- */
 /* ---- INTRO ---- */
 .intro-container {
   padding: 4rem 1rem;
@@ -200,7 +200,7 @@ header .navbar .dropdown-content li a {
   margin-bottom: 1rem;
 }
 
-/* ---- INTRO SLUT ---- */
+/* ---- INTRO END ---- */
 /* ---- SERVICES ---- */
 .services-preview {
   padding: 3rem 1rem;
@@ -259,8 +259,8 @@ header .navbar .dropdown-content li a {
   transform: translateY(0);
 }
 
-/* ---- SERVICES SLUT ---- */
-/* ---- TEKST + BILLEDE BLOCK ---- */
+/* ---- SERVICES END ---- */
+/* ---- TEXT + IMAGEE ---- */
 .tw-block-container {
   padding: 4rem 1rem;
   background-color: #E3DCD1;
@@ -282,12 +282,54 @@ header .navbar .dropdown-content li a {
   box-shadow: 20px 20px 0px 0px #335766;
 }
 
-/* ---- TEKST + BILLEDE BLOCK SLUT ---- */
+/* ---- TEXT + IMAGE END---- */
+/* ---- IMAGE + CONTACT FORM ---- */
 .contact-container {
   background-color: transparent;
 }
 
-/* ------------ FORSIDE SLUT ------------ */
+/* ---- IMAGE + CONTACT FORM END ---- */
+/* ---- TESTIMONIALS ---- */
+/* ---- TESTIMONIALS END ---- */
+/* ---- GALLERY ---- */
+.gallery {
+  padding: 10px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.gallery-item {
+  aspect-ratio: 4/3;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+}
+
+@media (min-width: 800px) {
+  .gallery-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  /* targets the last 4 frames in each block of 8 images */
+  .gallery-item:nth-child(8n+5),
+  .gallery-item:nth-child(8n+6),
+  .gallery-item:nth-child(8n+7),
+  .gallery-item:nth-child(8n+8) {
+    transform: translateX(50%);
+  }
+}
+/* ---- GALLERY END ---- */
+/* ------------ FRONTPAGE END ------------ */
 /* ------------ FOOTER ------------ */
 footer {
   background-color: #94A6AE;
@@ -308,8 +350,8 @@ footer .footer-logo img {
   margin-top: 1rem;
 }
 
-/* ------------ FOOTER SLUT ------------ */
-/* ------------ RESPONSIVE / MOBIL ------------ */
+/* ------------ FOOTER END ------------ */
+/* ------------ RESPONSIVE / MOBIL VERSION ------------ */
 @media (max-width: 768px) {
   header {
     flex-wrap: wrap;

@@ -17,7 +17,7 @@ dropdowns.forEach(dropdown => {
   });
 });
 
-/* Aktiv side */
+/* Active page (in navigation) */
 const currentPage = window.location.pathname.split("/").pop();
 
 const navLinks = document.querySelectorAll('.navbar a');
@@ -31,5 +31,4 @@ navLinks.forEach(link => {
     link.classList.remove('active');
   }
 });
-
 
