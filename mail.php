@@ -1,17 +1,27 @@
 <?php
 
-$name = $_POST['name'];
-$email = $_POST['email'];
-$subject = $_POST['subject'];
-$message = $_POST['message'];
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        $name = $_POST['name'];
+        $email = $_POST['email'];
+        $tel = $_POST['tel'];
+        $subject = $_POST['subject'];
+        $message = $_POST['message'];
 
-$mailheader = "From:".$name."<".$email.">\r\n";
+        $fullMessage = "Du har modtaget en ny besked via kontaktformularen:\n\n";
+        $fullMessage .= "Navn: $name\n";
+        $fullMessage .= "Telefon: $tel\n";
+        $fullMessage .= "E-mail: $email\n";
+        $fullMessage .= "By: $subject\n\n";
+        $fullMessage .= "Besked:\n$message\n";
 
-$recipient = "e.ellgaard@hotmail.com";
+        $mailheader = "From:".$name."<".$email.">\r\n";
 
+        $recipient = "e.ellgaard@hotmail.com";
 
-mail($recipient, $subject, $message, $mailheader) or die("Error!");
-
-echo'message send';
-
+        if (mail($recipient, "Ny kontaktbesked fra $name", $fullMessage, $mailheader)) {
+            echo "success";  
+        } else {
+            echo "error"; 
+        }
+    }
 ?>

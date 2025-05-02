@@ -54,26 +54,59 @@
             <img src="image/hero-forside.png" alt="">
         </section>
 
-        <!-- Contactform -->
-         <div class="contactform-container">
-            <h2>Kontakt</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, dolores!</p>
+        <section class="contact-section">
+            <div class="contact-wrapper">
+                <div class="contactform-container">
+                    <h1 class="margin-bottom">Kontakt din lokale murer</h1>
+                    
+                    <div class="contact-info-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <a href="tel:+4520819520">+45 20 81 95 20</a>
+                    </div>
+                    
+                    <div class="contact-info-item">
+                        <i class="fa-solid fa-envelope-open-text"></i>
+                        <a href="mailto:info@ettrupbyg.dk">info@ettrupbyg.dk</a>
+                    </div>
 
-            <form action="mail.php" method="post">
-                <label for="name">Navn:</label>
-                <input type="text" name="name" id="name">
-                <label for="email">E-mail:</label>
-                <input type="email" name="email" id="email">
-                <label for="text">Emne:</label>
-                <input type="text" name="subject" id="subject">
-                <label for="message">Besked</label>
-                <textarea name="message"></textarea>
-                <input type="submit" value="Send" class="btn">
-            </form>
-         </div>
+                    <div class="contact-info-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div>
+                            <p>Niels Petersensvej 35A</p>
+                            <p>Mørkholt</p>
+                            <p>7080 Børkop</p>
+                        </div>
+                    </div>
+        
+                    <p class="margin-top margin-bottom">Eller send en besked, så kontakter vi dig hurtigst muligt!</p>
+        
+                    <form id="contactForm" method="post">
+                        <input type="text" name="name" id="name" placeholder="Navn" aria-label="dit navn" required>
+                        <input type="tel" name="tel" id="tel" placeholder="Tlf. nr" aria-label="dit telefon nummer" required>
+                        <input type="email" name="email" id="email" placeholder="e-mail" aria-label="din email">
+                        <input type="text" name="subject" id="subject" placeholder="I hvilken by er opgaven?" aria-label="I hvilken by er opgaven">
+                        <textarea name="message" placeholder="Din besked" aria-label="din besked" required></textarea>
+                        <input type="submit" value="Send" class="btn" aria-label="Send besked">
+                    </form>
 
-            
+                </div>
+        
+                <div class="contact-img">
+                    <img src="image/map.png" alt="Kort over området">
+                </div>
+            </div>
+        </section>  
     </Main>
+
+        <!-- Modal for pop-up besked -->
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Tak for din besked!</h2>
+                <p>Din besked er blevet sendt, og vi vil kontakte dig snarest muligt.</p>
+            </div>
+        </div>
+  
 
     <footer>
         <div class="footer-info">
