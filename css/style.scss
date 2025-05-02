@@ -207,15 +207,13 @@ header {
 
 /* ------------ FRONTPAGE ------------ */
 /* ---- HERO-FRONTPAGE ---- */
-
 .hero-forside{
-    height: 100%;
+    height: 50vw;
     img{
         height: 100%;
         width: 100%;
     }
 }
-
 /* ---- HERO-FRONTPAGE END ---- */
 
 /* ---- HIGHLIGHT ---- */
@@ -412,8 +410,49 @@ header {
     max-width: 100%;
   }
 }
-
 /* ---- HERO END ---- */
+
+/* ---- SERVICE-GRID ---- */
+
+
+/* ---- SERVICE-GRID END ---- */
+
+/* ---- ASIDE LAYOUT ---- */
+.layout-wrapper {
+  display: flex;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  align-items: flex-start;
+}
+
+main {
+  flex: 2;
+}
+
+aside {
+  flex: 1;
+  background-color: partial.$primary-color;
+  padding: 1rem;
+  max-width: 400px;
+  border-radius: 5px;
+}
+
+@media (max-width: 900px) {
+  .layout-wrapper {
+    flex-direction: column;
+  }
+
+  .service-grid {
+    grid-template-columns: 1fr;
+  }
+
+  aside {
+    max-width: 100%;
+  }
+}
+/* ---- ASIDE LAYOUT END ---- */
 
 /* ------------ CONTACTPAGE ------------ */
 .contact-wrapper {
