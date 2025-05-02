@@ -15,6 +15,7 @@ body {
 h1, h2, h3 {
   font-family: "Gudea", sans-serif;
   color: #0f1010;
+  margin-bottom: 1rem;
 }
 
 h1 {
@@ -253,7 +254,7 @@ header .navbar .dropdown-content li a {
 }
 
 /* ---- INTRO END ---- */
-/* ---- SERVICES ---- */
+/* ---- SERVICES-PREVIEW ---- */
 .services-preview {
   padding: 3rem 1rem;
   background-color: #335766;
@@ -311,8 +312,8 @@ header .navbar .dropdown-content li a {
   transform: translateY(0);
 }
 
-/* ---- SERVICES END ---- */
-/* ---- TEXT + IMAGEE ---- */
+/* ---- SERVICES-PREVIEW END ---- */
+/* ---- TEXT + IMAGE ---- */
 .tw-block-container {
   padding: 4rem 1rem;
   background-color: #E3DCD1;
@@ -391,14 +392,24 @@ header .navbar .dropdown-content li a {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
+  margin: 1rem 0;
+  justify-content: space-between;
 }
 .service-grid article {
-  width: 350px;
+  width: 48%;
   background-color: #E3DCD1;
   padding: 1rem;
   border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 300px;
 }
-.service-grid article h3 {
+.service-grid article .btn {
+  margin-top: auto;
+}
+.service-grid article h3,
+.service-grid article p {
   margin-bottom: 1rem;
 }
 
@@ -428,7 +439,7 @@ aside {
 }
 aside .contactform-container input,
 aside .contactform-container textarea {
-  background-color: #335766;
+  background-color: #F8F6F3;
 }
 
 @media (max-width: 900px) {

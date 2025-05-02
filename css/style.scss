@@ -16,6 +16,7 @@ body {
 h1, h2, h3 {
   font-family: partial.$header-font;
   color: partial.$text-color;
+  margin-bottom: 1rem;
 }
 
 h1 { font-size: 2.5rem; }
@@ -254,7 +255,7 @@ header {
 }
 /* ---- INTRO END ---- */
 
-/* ---- SERVICES ---- */
+/* ---- SERVICES-PREVIEW ---- */
 .services-preview {
     padding: 3rem 1rem;
     background-color: partial.$secondary-color;
@@ -324,9 +325,9 @@ header {
       }
     }
   }
-/* ---- SERVICES END ---- */
+/* ---- SERVICES-PREVIEW END ---- */
 
-/* ---- TEXT + IMAGEE ---- */
+/* ---- TEXT + IMAGE ---- */
 .tw-block-container{
   padding: 4rem 1rem;
   background-color: partial.$box-color;
@@ -417,14 +418,25 @@ header {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
+  margin: 1rem 0;
+  justify-content: space-between;
 
     article{
-      width: 350px;
+      width: 48%;
       background-color: partial.$box-color;
       padding: 1rem;
       border-radius: 5px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 300px;
 
-      h3{
+      .btn {
+        margin-top: auto;
+      }
+
+      h3, 
+      p{
         margin-bottom: 1rem;
       }
     }
@@ -459,7 +471,7 @@ aside {
     
     input,
     textarea{
-      background-color: partial.$secondary-color;
+      background-color: partial.$bg-color;
     }
   }
 }
