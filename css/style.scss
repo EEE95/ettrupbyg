@@ -413,7 +413,22 @@ header {
 /* ---- HERO END ---- */
 
 /* ---- SERVICE-GRID ---- */
+.service-grid{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
 
+    article{
+      width: 350px;
+      background-color: partial.$box-color;
+      padding: 1rem;
+      border-radius: 5px;
+
+      h3{
+        margin-bottom: 1rem;
+      }
+    }
+}
 
 /* ---- SERVICE-GRID END ---- */
 
@@ -437,6 +452,16 @@ aside {
   padding: 1rem;
   max-width: 400px;
   border-radius: 5px;
+  top: 10px;
+  position: sticky;
+
+  .contactform-container{
+    
+    input,
+    textarea{
+      background-color: partial.$secondary-color;
+    }
+  }
 }
 
 @media (max-width: 900px) {

@@ -387,6 +387,21 @@ header .navbar .dropdown-content li a {
 
 /* ---- HERO END ---- */
 /* ---- SERVICE-GRID ---- */
+.service-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.service-grid article {
+  width: 350px;
+  background-color: #E3DCD1;
+  padding: 1rem;
+  border-radius: 5px;
+}
+.service-grid article h3 {
+  margin-bottom: 1rem;
+}
+
 /* ---- SERVICE-GRID END ---- */
 /* ---- ASIDE LAYOUT ---- */
 .layout-wrapper {
@@ -408,6 +423,12 @@ aside {
   padding: 1rem;
   max-width: 400px;
   border-radius: 5px;
+  top: 10px;
+  position: sticky;
+}
+aside .contactform-container input,
+aside .contactform-container textarea {
+  background-color: #335766;
 }
 
 @media (max-width: 900px) {
