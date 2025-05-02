@@ -253,6 +253,10 @@ header .navbar .dropdown-content li a {
 .intro-container .intro h1 {
   margin-bottom: 1rem;
 }
+.intro-container .intro a {
+  margin: 1rem;
+  margin-top: 2rem;
+}
 
 /* ---- INTRO END ---- */
 /* ---- SERVICES-PREVIEW ---- */
@@ -344,7 +348,34 @@ header .navbar .dropdown-content li a {
 /* ---- TESTIMONIALS ---- */
 .testimonials {
   background-color: #94A6AE;
-  height: 200px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+.testimonials .testimonial-card {
+  max-width: 500px;
+  height: 100%;
+  padding: 1.5rem;
+  background-color: #F8F6F3;
+  border-radius: 5px;
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: sans-serif;
+}
+.testimonials .testimonial-card .quote {
+  font-size: 1.1rem;
+  font-style: italic;
+  color: #333;
+  margin-bottom: 1rem;
+}
+.testimonials .testimonial-card .quote .stars {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+.testimonials .testimonial-card .quote .author {
+  font-weight: bold;
+  color: #555;
 }
 
 /* ---- TESTIMONIALS END ---- */
