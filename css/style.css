@@ -243,6 +243,7 @@ header .navbar .dropdown-content li a {
   padding: 4rem 1rem;
   display: flex;
   justify-content: center;
+  margin: 2rem 0;
 }
 .intro-container .intro {
   max-width: 1200px;
@@ -331,7 +332,7 @@ header .navbar .dropdown-content li a {
 }
 .tw-block-container .text-img-wrapper .img-block img {
   width: 100%;
-  min-height: 350px;
+  max-height: 600px;
   box-shadow: 20px 20px 0px 0px #335766;
 }
 
@@ -341,6 +342,11 @@ header .navbar .dropdown-content li a {
 
 /* ---- TEXT + IMAGE END---- */
 /* ---- TESTIMONIALS ---- */
+.testimonials {
+  background-color: #94A6AE;
+  height: 200px;
+}
+
 /* ---- TESTIMONIALS END ---- */
 /* ---- GALLERY ---- */
 .gallery {

@@ -242,6 +242,7 @@ header {
     padding: 4rem 1rem;
     display: flex;
     justify-content: center;
+    margin: 2rem 0;
 
     .intro{
         max-width: 1200px;
@@ -347,7 +348,7 @@ header {
     .img-block{
       img{
         width: 100%;
-        min-height: 350px;
+        max-height: 600px;
         box-shadow: 20px 20px 0px 0px partial.$secondary-color;
       }
     }
@@ -360,7 +361,10 @@ header {
 /* ---- TEXT + IMAGE END---- */
 
 /* ---- TESTIMONIALS ---- */
-
+.testimonials{
+  background-color: partial.$primary-color;
+  height: 200px;
+}
 
 /* ---- TESTIMONIALS END ---- */
 
