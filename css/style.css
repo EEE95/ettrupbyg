@@ -387,36 +387,61 @@ background-color: partial.$secondary-color;
 }
 /* ---- TEXT + IMAGE END---- */
 /* ---- TESTIMONIALS ---- */
-.testimonials {
+.testimonial-container {
   background-color: #94A6AE;
-  height: 400px;
+  padding: 5rem;
+  text-align: center;
+  margin-top: 1rem;
   display: flex;
   justify-content: center;
+}
+.testimonial-container .testimonial-card {
+  display: inline-block;
+  background-color: #fff;
   padding: 2rem;
-}
-.testimonials .testimonial-card {
-  max-width: 500px;
-  height: 100%;
-  padding: 1.5rem;
-  background-color: #F8F6F3;
+  border: 1px solid #ddd;
   border-radius: 5px;
-  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.1);
+  max-width: 1000px;
+  width: auto;
+  height: 250px;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
-  font-family: sans-serif;
+  overflow: hidden;
+  position: relative;
 }
-.testimonials .testimonial-card .quote {
-  font-size: 1.1rem;
+.testimonial-container .testimonial-card .quote {
   font-style: italic;
   color: #333;
-  margin-bottom: 1rem;
+  max-height: 200px;
+  overflow: hidden;
 }
-.testimonials .testimonial-card .quote .stars {
-  font-size: 1.2rem;
-  margin-bottom: 0.5rem;
+.testimonial-container .testimonial-card .stars i {
+  margin-top: 2rem;
+  color: #FFD43B;
 }
-.testimonials .testimonial-card .quote .author {
+.testimonial-container .testimonial-card .author {
+  margin-top: 10px;
   font-weight: bold;
-  color: #555;
+  color: #444;
+}
+.testimonial-container .nav-buttons {
+  margin-top: 10px;
+}
+.testimonial-container .nav-buttons button {
+  background-color: #335766;
+  color: #fff;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  margin: 0 3rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.testimonial-container .nav-buttons button:hover {
+  background-color: #E97E3A;
+}
+.testimonial-container .nav-buttons button i {
+  margin-right: 5px;
 }
 
 /* ---- TESTIMONIALS END ---- */
@@ -601,6 +626,7 @@ aside .contactform-container textarea {
   margin-bottom: 10px;
   font-size: 18px;
   padding: 10px;
+  border-radius: 5px;
 }
 .contactform-container input:focus,
 .contactform-container textarea:focus {

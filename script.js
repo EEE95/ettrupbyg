@@ -1,4 +1,4 @@
-/* ---- Navigation ---- */
+/* ---- NAVIGATION ---- */
 
 const menuToggle = document.getElementById('menu-toggle');
 const navbar = document.getElementById('navbar');
@@ -17,7 +17,7 @@ dropdowns.forEach(dropdown => {
   });
 });
 
-/* Active page (navigation) */
+/* ACTIVE PAGE (NAVIGATION) */
 const currentPage = window.location.pathname.split("/").pop();
 
 const navLinks = document.querySelectorAll('.navbar a');
@@ -32,7 +32,7 @@ navLinks.forEach(link => {
   }
 });
 
-/* ---- Pop-up contactform ---- */
+/* ---- POP-UP CONTACTFORM ---- */
 document.getElementById('contactForm').addEventListener('submit', (e) => {
   e.preventDefault();
   e.stopImmediatePropagation();
