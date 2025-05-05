@@ -224,7 +224,7 @@ align-items: center;
   .highlight{
   display: flex;
   align-items: center;
-  gap: .5rem;
+  gap: 0.5rem;
         
     p{
     color: partial.$bg-color;
@@ -461,6 +461,22 @@ justify-content: center;
     
     button i {
     margin-right: 5px;
+    }
+  }
+}
+
+@media (max-width: 768px){
+  .testimonial-container {
+    padding: 1rem;
+
+    .testimonial-card {
+    padding: 1rem;
+    width: auto;
+    height: auto; 
+      
+      .quote {
+      max-height: 500px;
+      }
     }
   }
 }

@@ -13,7 +13,7 @@ body {
 }
 
 h1, h2, h3 {
-  font-family: "Gudea", sans-serif;
+  font-family: "bahnschrift", sans-serif;
   color: #0f1010;
   margin-bottom: 1rem;
 }
@@ -444,6 +444,19 @@ background-color: partial.$secondary-color;
   margin-right: 5px;
 }
 
+@media (max-width: 768px) {
+  .testimonial-container {
+    padding: 1rem;
+  }
+  .testimonial-container .testimonial-card {
+    padding: 1rem;
+    width: auto;
+    height: auto;
+  }
+  .testimonial-container .testimonial-card .quote {
+    max-height: 500px;
+  }
+}
 /* ---- TESTIMONIALS END ---- */
 /* ---- GALLERY ---- */
 .gallery {
