@@ -195,14 +195,6 @@ header .navbar .dropdown-content li a {
   header .navbar.active {
     display: flex;
   }
-  header .dropdown:hover .dropdown-content {
-    display: none;
-  }
-  header .dropdown.open .dropdown-content {
-    display: block;
-    position: static;
-    box-shadow: none;
-  }
   header.contact-info {
     height: 20px;
     gap: 1rem;
