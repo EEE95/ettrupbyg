@@ -1,5 +1,4 @@
 /* ---- NAVIGATION ---- */
-
 const menuToggle = document.getElementById('menu-toggle');
 const navbar = document.getElementById('navbar');
 const dropdowns = document.querySelectorAll('.dropdown');

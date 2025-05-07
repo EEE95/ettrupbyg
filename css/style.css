@@ -514,7 +514,7 @@ background-color: partial.$secondary-color;
 .service-grid article {
   width: 48%;
   background-color: #E3DCD1;
-  padding: 2rem;
+  padding: 2rem 1rem;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
@@ -653,12 +653,11 @@ aside .contactform-container textarea {
 }
 .contactform-container input[type=submit] {
   margin-top: 1rem;
-  width: 100px;
+  width: auto;
   background-color: #E97E3A;
 }
 .contactform-container input[type=submit]:hover {
   background-color: #335766;
-  padding: 0;
 }
 
 /* ---- POP-UP ---- */

@@ -541,7 +541,7 @@ justify-content: space-between;
   article{
   width: 48%;
   background-color: partial.$box-color;
-  padding: 2rem;
+  padding: 2rem 1rem;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
@@ -706,12 +706,11 @@ margin: 0 auto;
 
   input[type=submit]{
   margin-top: 1rem;
-  width: 100px;
+  width: auto;
   background-color: partial.$accent-color;
 
     &:hover{
     background-color: partial.$secondary-color;
-    padding: 0;
     }
   }
 }
