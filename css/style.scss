@@ -365,9 +365,9 @@ background-color: partial.$box-color;
 
     .img-block{
       img{
-        width: 100%;
-        max-height: 600px;
-        box-shadow: 20px 20px 0px 0px partial.$secondary-color;
+      width: 100%;
+      max-height: 600px;
+      box-shadow: 20px 20px 0px 0px partial.$secondary-color;
       }
     }
   }
@@ -618,6 +618,7 @@ max-width: 100%;
 .contact-wrapper {
 display: flex;
 flex-wrap: wrap;
+align-items: center;
 
   .contactform-container,
   .contact-img {
