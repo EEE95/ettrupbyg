@@ -30,6 +30,17 @@ h3 {
   font-size: 1.4rem;
 }
 
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.7rem;
+  }
+  h3 {
+    font-size: 1.4rem;
+  }
+}
 p {
   font-size: 1.2rem;
   color: #0f1010;
@@ -374,15 +385,14 @@ background-color: partial.$secondary-color;
   }
   .tw-block-container .text-img-wrapper {
     flex-direction: column;
-    gap: 1rem;
-  }
-  .contact-container .text-img-wrapper {
-    flex-direction: column-reverse;
   }
   .text-block {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  .remove {
+    display: none;
   }
 }
 /* ---- TEXT + IMAGE END---- */
@@ -529,7 +539,7 @@ background-color: partial.$secondary-color;
   margin-bottom: 1rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 700px) {
   .service-grid article {
     width: 100%;
   }
@@ -572,6 +582,7 @@ aside .contactform-container textarea {
   }
   aside {
     max-width: 100%;
+    padding: 0;
   }
 }
 /* ---- ASIDE LAYOUT END ---- */
