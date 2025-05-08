@@ -210,13 +210,32 @@ gap: 1rem;
 /* ------------ FRONTPAGE ------------ */
 /* ---- HERO-FRONTPAGE ---- */
 .hero-forside{
-height: 50vw;
-  img{
-  height: 100%;
+position: relative;
+height: 50vh;
+overflow: hidden;
+    
+  video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
   width: 100%;
+  height: auto;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  z-index: -1;
   }
+  
+  /*.content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 2rem;
+  }*/
 }
 /* ---- HERO-FRONTPAGE END ---- */
+  
 
 /* ---- HIGHLIGHT ---- */
 .highlight-container{
