@@ -722,7 +722,7 @@ aside .contactform-container textarea {
   position: fixed;
   bottom: 20px;
   right: 30px;
-  z-index: 99;
+  z-index: 1000;
   border: none;
   outline: none;
   background-color: #E97E3A;
