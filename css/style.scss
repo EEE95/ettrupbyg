@@ -298,78 +298,6 @@ margin: 2rem 0;
 }
 /* ---- INTRO END ---- */
 
-/* ---- SERVICES-PREVIEW ---- 
-.services-preview {
-padding: 3rem 1rem;
-background-color: partial.$secondary-color;
-  
-  .service-grid {
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-  }
-  
-  .service-box {
-  position: relative;
-  display: block;
-  height: 250px;
-  overflow: hidden;
-  border-radius: 5px;
-  text-decoration: none;
-  
-    .image {
-    position: absolute;
-    inset: 0;
-    background-size: cover;
-    background-position: center;
-    transition: transform 0.4s ease;
-    z-index: 0;
-    }
-  
-    .overlay {
-    position: absolute;
-    inset: 0;
-    z-index: 1;
-    background: rgba(255, 255, 255, 0.555);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 1rem;
-  
-      h3 {
-      margin-bottom: 0.5rem;
-      transition: transform 0.3s ease;
-      }
-  
-      .read-more {
-      opacity: 0;
-      transform: translateY(10px);
-      transition: opacity 0.3s ease, transform 0.3s ease;
-      }
-    }
-  
-    &:hover {
-      .image {
-      transform: scale(1.1);
-      }
-  
-      .overlay {
-        h3 {
-        transform: translateY(-5px);
-        }
-  
-        .read-more {
-        opacity: 1;
-        transform: translateY(0);
-        }
-      }
-    }
-  }
-}
- ---- SERVICES-PREVIEW END ---- */
-
 /* ---- TEXT + IMAGE ---- */
 .tw-block-container{
 padding: 4rem 1rem;
@@ -388,10 +316,16 @@ background-color: partial.$box-color;
     }
 
     .img-block{
-      img{
-      width: 100%;
       max-height: 600px;
+      overflow: hidden;
       box-shadow: 20px 20px 0px 0px partial.$secondary-color;
+      margin: 1rem;
+
+      img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
       }
     }
   }
@@ -547,8 +481,14 @@ display: block;
 
 /* ---- HERO ---- */
 .hero{
+height: 500px;
+overflow: hidden;
+
   img{
   width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
   }
 }
 /* ---- HERO END ---- */
