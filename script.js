@@ -36,16 +36,12 @@ document.getElementById('contactForm').addEventListener('submit', (e) => {
   e.preventDefault();
   e.stopImmediatePropagation();
 
-  console.log('Formularen er blevet forhindret i at blive sendt normalt.');
-
   const formData = new FormData(e.target);
-
   const request = new XMLHttpRequest();
+
   request.open('POST', 'mail.php', true);
 
   request.onload = () => {
-    console.log('Anmodningen blev afsluttet. Status:', request.status);
-
     if (request.status === 200) {
       document.getElementById("myModal").style.display = "block";
       history.pushState(null, '', window.location.href);
@@ -56,7 +52,7 @@ document.getElementById('contactForm').addEventListener('submit', (e) => {
   };
 
   request.onerror = () => {
-    console.log('Der opstod en fejl under anmodningen');
+    console.log('Der opstod en fejl');
   };
 
   request.send(formData);
