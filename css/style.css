@@ -224,12 +224,6 @@ header .navbar .dropdown-content li a {
   position: relative;
   height: 50vh;
   overflow: hidden;
-  /*.content {
-  position: relative;
-  z-index: 1;
-  text-align: center;
-  padding: 2rem;
-  }*/
 }
 .hero-forside video {
   position: absolute;
