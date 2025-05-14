@@ -440,6 +440,7 @@ header .navbar .dropdown-content li a {
   -o-object-fit: cover;
      object-fit: cover;
   display: block;
+  border-radius: 5px;
 }
 
 @media (min-width: 800px) {
@@ -503,6 +504,16 @@ header .navbar .dropdown-content li a {
   }
 }
 /* ---- SERVICE-GRID END ---- */
+.for-efter-img {
+  display: flex;
+  margin: 10px 0;
+  gap: 10px;
+}
+.for-efter-img img {
+  max-width: 45%;
+  border-radius: 5px;
+}
+
 /* ---- ASIDE LAYOUT ---- */
 .layout-wrapper {
   display: flex;

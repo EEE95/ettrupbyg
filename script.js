@@ -31,7 +31,7 @@ navLinks.forEach(link => {
   }
 });
 
-/* ---- POP-UP CONTACTFORM ---- */
+/* ---- CONTACTFORM + POP-UP ---- */
 document.getElementById('contactForm').addEventListener('submit', (e) => {
   e.preventDefault();
   e.stopImmediatePropagation();
